@@ -1,0 +1,162 @@
+
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+        
+
+        <link rel="stylesheet" href="../mkslides-assets/reveal-js/dist/reveal.css" />
+
+        
+            <link rel="stylesheet" href="../mkslides-assets/reveal-js/dist/theme/black.css" />
+        
+        
+            <link rel="stylesheet" href="../mkslides-assets/highlight-js-themes/monokai.css" />
+        
+
+        
+
+        
+            <title>Slides</title>
+        
+    </head>
+    <body>
+        <div class="reveal">
+            <div class="slides">
+                <section data-markdown
+                
+                >
+                    <!-- The markdown must be placed to the whole left to prevent indentation issues like https://github.com/MartenBE/mkslides/issues/52 -->
+                    <textarea data-template>
+# Sistemas Informáticos
+## UD01 · Introducción al sistema informático
+### DAM · Sergio Rey Martínez
+
+---
+
+## ¿Qué es un sistema informático?
+
+Conjunto de elementos interrelacionados para:
+
+- **Almacenar** información
+- **Procesar** información
+- **Transmitir** información
+
+> Hardware + Software + Personas
+
+---
+
+## Hardware vs Software
+
+| | Hardware | Software |
+|--|----------|----------|
+| **Es** | Físico, tangible | Lógico, intangible |
+| **Ejemplos** | CPU, RAM, disco | SO, apps, drivers |
+| **Sin el otro** | Piezas inertes | Sin donde ejecutarse |
+
+---
+
+## Tipos de sistemas informáticos
+
+- 🖥️ **PC** — uso individual, equilibrio coste/rendimiento
+- 🖧 **Servidor** — da servicio en red, fiabilidad máxima
+- 🔧 **Sistema embebido** — dentro de otro dispositivo
+- 📱 **Dispositivo móvil** — bajo consumo, tamaño reducido
+
+---
+
+## Los componentes están interrelacionados
+
+```
+CPU → socket → Placa Base → tipo de RAM
+                   ↓
+            interfaces SATA / M.2
+                   ↓
+            Almacenamiento
+```
+
+**Elegir uno condiciona al resto**
+
+---
+
+## Capas del software
+
+| Capa | Ejemplos |
+|------|----------|
+| **Aplicaciones** | IDE, navegador, ofimática |
+| **Sistema Operativo** | Windows, Linux, macOS |
+| **Firmware** | BIOS / UEFI |
+| **Hardware** | CPU, RAM, disco |
+
+---
+
+## ¿Dónde trabajamos nosotros?
+
+Como desarrolladores trabajamos en la **capa de aplicaciones**...
+
+...pero entender las capas inferiores nos permite:
+
+- Escribir código más **eficiente**
+- Resolver problemas **inexplicables**
+- Elegir la infraestructura **adecuada**
+
+---
+
+## Resumen
+
+- Un sistema informático = hardware + software + personas
+- Todos los componentes están **interrelacionados**
+- El hardware sin software es inerte, el software sin hardware no existe
+- Como DAM trabajamos en aplicaciones, pero necesitamos entender todo el sistema
+
+---
+
+# ¿Preguntas?
+                    </textarea>
+                </section>
+            </div>
+        </div>
+        <script src="../mkslides-assets/reveal-js/dist/reveal.js"></script>
+        <script src="../mkslides-assets/reveal-js/dist/plugin/highlight.js"></script>
+        <script src="../mkslides-assets/reveal-js/dist/plugin/markdown.js"></script>
+        <script src="../mkslides-assets/reveal-js/dist/plugin/math.js"></script>
+        <script src="../mkslides-assets/reveal-js/dist/plugin/notes.js"></script>
+        <script src="../mkslides-assets/reveal-js/dist/plugin/search.js"></script>
+        <script src="../mkslides-assets/reveal-js/dist/plugin/zoom.js"></script>
+
+        
+
+        <script>
+            Reveal.initialize({
+                
+                    
+                        history: true,
+                    
+                        slideNumber: true,
+                    
+                        transition: "slide",
+                    
+                        center: true,
+                    
+                        hash: true,
+                    
+                        theme: "black",
+                    
+                
+                plugins: [
+                    RevealMarkdown, // Must come before the other plugins so they can hook into the generated HTML.
+                    RevealHighlight,
+                    RevealMath.KaTeX,
+                    RevealNotes,
+                    RevealSearch,
+                    RevealZoom,
+
+                    
+                ],
+            });
+        </script>
+    </body>
+</html>
